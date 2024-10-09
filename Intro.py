@@ -182,3 +182,82 @@ for i in range(1, max_capacity+1):
   tickets_sold +=1
   
 print("Sold out:", tickets_sold, "tickets sold!")
+
+# Loop through the dictionary's keys and values
+for key, value in courses.items():
+  
+  # Check if the value is "AI"
+  if value == "AI":
+    print(key, "is an AI course")
+  
+  # Check if the value is "Programming"
+  elif value == "Programming":
+    print(key, "is a Programming course")
+  
+  # Otherwise, print that it is a "Data Engineering" course
+  else:
+    print(key, "is a Data Engineering course")
+
+tickets_sold = 0
+max_capacity = 10
+
+# Create a while loop
+while tickets_sold < max_capacity:
+  
+  # Add one to tickets_sold in each iteration
+  tickets_sold +=1
+
+# Print the number of tickets sold
+print("Sold out:", tickets_sold, "tickets sold!")
+
+release_date = 26
+current_date = 22
+
+release_date = 26
+current_date = 22
+
+# Create a conditional loop while current_date is less than or equal to the release_date
+while current_date <= release_date:
+  
+  # Increment current_date by one
+  current_date += 1
+  
+  # Promote purchases
+  if current_date <=24:
+    print("Purchase before the 25th for early access")
+  
+  # Check if the date is equal to the 25th
+  elif current_date == 25:
+    print("Coming soon")
+  else:
+    print("Available now!")
+
+# Create an empty list
+authors_below_twenty_five = []
+
+# Loop through the authors dictionary
+for key, value in authors.items():
+  
+  # Check for values less than 25
+  if value<25:
+    
+    # Append the author to the list
+    authors_below_twenty_five.append(key)
+    
+print(authors_below_twenty_five)
+
+for genre, average_sale in genre_sales.items():
+    
+    # Filter for the maximum sales value
+    if average_sale == 5166000000:
+      
+      # Print the genre
+      print("Most popular genre: ", genre)
+      print("Average sales: ", average_sale)
+    
+    # Filter for the minimum sales value
+    elif average_sale == 80000000:
+      
+      # Print the genre
+      print("Least popular genre: ", genre)
+      print("Average sales: ", average_sale)
