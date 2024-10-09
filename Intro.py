@@ -156,3 +156,29 @@ elif rent > max_rent:
 # If all conditions met
 else:
   print("This looks promising!")
+
+
+
+                                #LOOPS AND RANGE#
+
+user_ids = ["T42YG4KTK", "VTQ39IDQ0", "CRL11YUWX", 
+            "K6Y5URXLR", "V4XCBER7V", "IOGQWC61K"]
+
+# Loop through user_ids
+for user_id in user_ids:
+  # Print the user_id
+  print(user_id)
+
+# Create the tickets_sold variable
+tickets_sold = 0
+
+# Create the max_capacity variable
+max_capacity = 30
+
+# Loop through a range up to and including max_capacity's value
+for i in range(1, max_capacity+1):
+  
+  # Add one to tickets_sold in each iteration
+  tickets_sold +=1
+  
+print("Sold out:", tickets_sold, "tickets sold!")
