@@ -151,3 +151,16 @@ def convert_data_structure(data, data_type="list"):
 
 # Call the function to convert to a set
 convert_data_structure({"a", 1, "b", 2, "c", 3}, data_type="set")
+
+#docstrings#
+
+def clean_string(text):
+  
+  # Add a single-line docstring
+  """Swap spaces to underscores and convert text to lowercase.""" 
+  no_spaces = text.replace(" ", "_")
+  clean_text = no_spaces.lower()
+  return clean_text
+
+# Access the docstring
+print(clean_string.__doc__)
