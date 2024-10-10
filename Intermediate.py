@@ -263,6 +263,6 @@ def snake_case(text):
     clean_text = clean_text.lower()
   else:
     # Return a TypeError error if the wrong data type was used
-    TypeError("The snake_case() function expects a string as an argument, please check the data type provided.")
+    raise TypeError("The snake_case() function expects a string as an argument, please check the data type provided.")
     
 snake_case("User Name 187")
